@@ -16,7 +16,9 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="generator" content="Blog-App" />
-  <title>Caleb</title>
+  <title>poop</title>
+<!--    firebase -->
+    <script src="https://cdn.firebase.com/js/client/2.2.9/firebase.js"></script>
   <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
   <!-- Chrome for Android theme color -->
@@ -60,59 +62,37 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 <body unresolved class="fullbleed layout vertical">
   <template is="dom-bind" id="app">
       <paper-header-panel id="myHeaderPanel"  main mode="scroll">
-        <!-- Main Toolbar -->
-        <paper-toolbar class="horizontal layout center center-justified" id="mainToolbar">
-            <div class="itemContainer horizontal layout center">
-                <paper-tabs noink selected="0">
-                  <paper-tab link>
-                    <a href="/" class="tabButton horizontal center-center layout" style="width: 80px;"><iron-icon icon="home"></iron-icon></a>
-                  </paper-tab>
-                  <paper-tab link>
-                    <a href="gallery" class="tabButton horizontal center-center layout" style="width: 80px;"><iron-icon icon="apps"></iron-icon></a>
-                  </paper-tab>
+        <div class="layout horizontal"id="mainToolbar">
 <!--
-                    <paper-tab link>
-                    <a href="comments" class="tabButton horizontal center-center layout" style="width: 80px;"><iron-icon icon="assignment"></iron-icon></a>
-                  </paper-tab>
+                  <paper-tabs noink selected="0" class="">
+                          <paper-tab link>
+                            <a href="/" class="tabButton horizontal center-center layout" style="width: 80px;"><iron-icon icon="thumb-down"></iron-icon></a>
+                          </paper-tab>
+                          <paper-tab link>
+                            <a href="shop" class="tabButton horizontal center-center layout" style="width: 80px;"><iron-icon icon="shopping-cart"></iron-icon></a>
+                          </paper-tab>
+                        </paper-tabs>
 -->
-                </paper-tabs>
-                <div class="flex"><span></span></div>
-                <a data-route="home" href="/"><paper-icon-button class="logoIcon horizontal center-justified" icon="cloud"></paper-icon-button></a>
-                
-
-<!--                <a data-route="home" href="/"><paper-button>Caleb</paper-button></a>-->
-                
-<!--                    <google-signin theme="light" label-signin="Sign-in" client-id="366141667218-n5009fhk940n0trtsiqjjc74lup17m5o.apps.googleusercontent.com" scopes="https://www.googleapis.com/auth/drive"></google-signin>-->
-            </div>
-        </paper-toolbar>
+                      <span class="flex"></span>
+                            <google-signin class="signinbtn" theme="light" label-signin="Sign-in" client-id="500352828855-ekm0oisdfvhn0p6ncp241cnitqlefcrm.apps.googleusercontent.com" scopes="https://www.googleapis.com/auth/plus.profile.emails.read"></google-signin>
+                  
+          </div>
           
         <!-- Main Content -->
+          <div class="container-poo">
+<!--          <paper-material  elevation="1">-->
           <iron-pages attr-for-selected="data-route" selected="{{route}}">
               
             <section data-route="home">
-                <div class="container-poo">
-              <paper-material  elevation="1">
-<!--                  <h1 class="paper-font-display1"><span>Home</span></h1>-->
-                <home-element></home-element>
-              </paper-material>
-                    </div>
+                 <home-element></home-element>
             </section>
               
-            <section data-route="gallery">
-                <div class="container-poo">
-              <paper-material  elevation="1">
-                <gallery-element></gallery-element>
-              </paper-material>
-                    </div>
-            </section>
-              <section data-route="comments">
-                <div class="container-poo">
-              <paper-material  elevation="1">
-                <comments-element></comments-element>
-              </paper-material>
-                    </div>
+            <section data-route="shop">
+              second page
             </section>
           </iron-pages>
+<!--              </paper-material>-->
+          </div>
           </paper-header-panel>
 
 

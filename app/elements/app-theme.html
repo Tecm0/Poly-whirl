@@ -18,11 +18,28 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
  colours at MaterialPalette.com.
  */
     #myHeaderPanel {
+        background-color: white;
 /*     background-color: #E7E7E7;*/
-        background-color: #E9E9E9;
-        background-image: url(/images/bg.JPG);
+/*        background-color: #E9E9E9;*/
+/*        background-image: url(/images/bg.JPG);*/
         background-size: cover;
         background-repeat: no-repeat;
+    }
+
+    
+    .leftItem {
+        align-items: flex-start;
+        flex-grow: 1;
+    }
+    
+    .midItem {
+        align-items: stretch;
+        flex-grow: 1;
+       
+    }
+    .rightItem {
+        align-items: flex-end;
+        flex-grow: 1;
     }
     
     
@@ -31,11 +48,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
         color: inherit;
       background-color: inherit;
    }
-/*
-    .logoIcon {
-     color: white;
-    }
-*/
+
     .container-poo {
         margin-left: auto;
         max-width: 1035px;
@@ -43,24 +56,23 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
         margin-right: auto;
     }
     .itemContainer {
-     width: 1035px;
+
+/*        width: 1035;*/
     }
     
-    .toolbarItem_left {
-        
-    }
     
-    .toolbarItem_right {
-        
-    }
     
     #mainToolbar {
+/*        color: #73e1ff;*/
     color: #424242;
-    background-color: #FFF;
-    height: 47px;
+/*    background-color: #FFF;*/
+    height: 56px;
+/*
     border-bottom-style: solid;
     border-bottom-width: 2px;
     border-bottom-color: #424242;
+*/
+    width: 100%;
     
 /*
   box-shadow: 0 4px 5px 0 rgba(0,0,0,.14),
@@ -86,8 +98,8 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     /* Components */
         
     /* paper-tabs */
-    --paper-tabs-selection-bar-color: #00EAEA;
-    --paper-tab-ink: #FF9900;
+    --paper-tabs-selection-bar-color: #73e1ff;
+    --paper-tab-ink: #000000;
     /* paper-drawer-panel */
     --drawer-menu-color: #ffffff;
     --drawer-border-color: 1px solid #ccc;
@@ -105,8 +117,8 @@ paper-material {
   height: 100%;
   padding: 16px 0px 16px 0px;
   width: calc(98.66% - 16px);
-    margin-top: 0px;
-/*  margin: 16px auto;*/
+/*    margin-top: 0px;*/
+  margin: 16px auto;
 /*    margin-bottom: 75px;*/
   background: #FFF;
 }
@@ -117,11 +129,12 @@ paper-tabs paper-tab::shadow #ink {
     }
 */
 paper-tabs paper-tab::selected {
-      background-color: red;
+/*      background-color: red;*/
     }
 paper-tabs paper-tab:hover {
     color: #E9E9E9;   
-    background-color: #424242;
+/*    background-color: #424242;*/
+    background-color: #73e1ff;
 }
     
 

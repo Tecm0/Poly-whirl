@@ -1,9 +1,6 @@
 {
-  "name": "poly-blog",
-  "root": "./",
+  "name": "nytnarb",
+  "root": "./dist",
   "clean_urls": true,
-  "error_page": "error.html",
-  "routes": {
-  	"**": "index.html"
-  }
+  "error_page": "error.html"
 }

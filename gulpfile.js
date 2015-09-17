@@ -189,6 +189,8 @@ gulp.task('server', function(cb) {
 });
 
 // Watch Files For Changes & Reload
+
+gulp.task('s', ['serve']);
 gulp.task('serve', ['styles', 'elements', 'images'], function () {
   browserSync({
     notify: false,
